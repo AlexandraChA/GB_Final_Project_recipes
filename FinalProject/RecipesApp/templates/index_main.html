@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h3>Главная страница</h3>
+{% for e in random_recipes_5 %}
+<div>
+    {{e}}
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h1>Страница Входа</h1>
+<div class="login_block">
+    <div class="content">
+        <div class="login_form">
+            <form action="" method="post" enctype="multipart/form-data">
+                <input type="text" name="usr_name" required /> <i>Имя</i>
+                <br>
+                <input type="text" name="usr_email" required /> <i>Почта</i>
+                <input type="submit" value="Войти" />
+            </form>
+            <div class="links"> <a href="#">Забыли почту?</a>
+            </div>
+            <div>
+                <h3>Или Зарегистрируйтесь</h3>
+                <div class="signup_block">
+                    <div class="content">
+                        <div class="signup_form">
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <input type="text" name="usr_name" required /> <i>Имя</i>
+                                <br>
+                                <input type="text" name="usr_surname" required /> <i>Фамилия</i>
+                                <br>
+                                <input type="email" name="usr_email" required /> <i>Почта</i>
+                                <br>
+                                <input type="password" name="usr_password" required /> <i>Пароль</i>
+                                <input type="submit" value="Зарегистрироваться" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

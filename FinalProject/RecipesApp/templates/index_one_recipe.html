@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h3>Страница с подробным описание рецепта</h3>
+
+<h4>{{recipe_name}}</h4>
+<h5>Описание рецепта</h5>
+<p>{{recipe_desc}}</p>
+<h5>Описание шагов приготовления</h5>
+<p>{{recipe_steps}}</p>
+<p>Время выполнения данного рецепта: {{recipe_time}} минут</p>
+<p>Автор данного рецепта: {{recipe_author}}</p>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h3>Страница создания нового рецепта</h3>
+<form action="" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_div }}
+    <input type="submit" value="Отправить">
+</form>
+{% endblock %}
